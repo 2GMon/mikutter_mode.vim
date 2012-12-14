@@ -2,6 +2,7 @@ mikutter_mode.vim
 =================
 
 mikutter-modeっぽい機能をvimで使えるようにした
+[mikutter-mode](https://github.com/toshia/mikutter-mode)
 
 依存とか推奨とか
 ----------------
