@@ -12,5 +12,5 @@ augroup mikutter-setting
   autocmd FileType ruby if match(expand("%:p"), 'mikutter') != -1 | set filetype=mikutter.ruby | endif
 augroup END
 
-command! MikuOnTheFlyExcuter
+command! MikutterModeOnTheFlyExcuterCurrentBuffer
             \ call mikutter_mode#onthefly_excuter_current_buffer()
