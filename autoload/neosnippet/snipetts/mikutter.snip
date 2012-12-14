@@ -1,0 +1,45 @@
+snippet		command
+abbr		command
+	command(:${1:slug},
+					name: '${2:name}',
+					condition: lambda{ |opt| ${3:condition} },
+					visible: true,
+					role: :${4:role}) do |opt|
+						${0}
+					end
+
+snippet		filter_
+abbr		filter
+	filter_${1:filter_name} do |${2}|
+		${0}
+		[${2:mapconcat}]
+	end
+
+snippet		fire
+abbr		fire event
+	Plugin.call(${1:event name}, ${2:args})${0}
+
+snippet		on_
+abbr		define event
+	on_${1:event name} do |${2}|
+		${0}
+	end
+
+snippet		ptl
+abbr		plugin template
+	Plugin.create(:${1:slug}) do
+		${0}
+	end
+
+snippet		settings
+abbr		settings
+	settings("${1:name}") do
+		${0}
+	end
+
+snippet		tab
+abbr		tab
+	tab(${1:slug}, "${2}") do
+		set_icon${3}
+		${0}
+	end
